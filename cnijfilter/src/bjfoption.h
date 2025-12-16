@@ -215,6 +215,7 @@ typedef struct {
 	short	rotate;
 	BJF_BBOX	bbox;
 } BJF_OPTINFO, *LPBJF_OPTINFO;
+#include "cncludef.h"
 
 /* over margin */
 static short ExtensionTbl[][2] = 
@@ -288,7 +289,7 @@ static char usage_err_mes[OPT_ERR_CODE_MAX][256]={
 
 
 
-
+#include "cnclucom.h"
 extern 	short SetCmdOption(int, char **, LPBJF_OPTINFO, LPBJFLTCOLORSYSTEM, LPBJFLTDEVICE, LPCNCLPAPERSIZE, char *, char *, char *);
 extern void MakeModelnameConfname(  char *, char *, char *, char *, char *);
 extern short CheckSettings( LPBJFLTDEVICE , char * );

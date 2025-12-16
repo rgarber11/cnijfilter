@@ -101,6 +101,7 @@ extern short bjf_pos_scaling( LPBJF_POSINFO, double * );
 extern void disp_bjf_posinfo( LPBJF_POSINFO );
 extern void disp_bjf_posimg( LPBJF_POS_IMGINFO );
 extern void disp_bjf_posprn( LPBJF_POS_PRNINFO );
+extern void bjf_margin_init( LPBJF_MARGIN_INFO );
 
 extern short bjf_pos_set_imgwidth( LPBJF_POS_IMGINFO, long );
 extern short bjf_pos_set_imgheight( LPBJF_POS_IMGINFO, long );
@@ -113,6 +114,7 @@ extern short bjf_pos_set_prnYres( LPBJF_POS_PRNINFO, double );
 extern short bjf_pos_set_prnwidth( LPBJF_POS_PRNINFO, long );
 extern short bjf_pos_set_prnheight( LPBJF_POS_PRNINFO, long );
 
+
 extern short SetImageSize( LPBJF_POS_IMGINFO, LPBJF_POS_PRNINFO, LPBJF_POSINFO);
 extern short ImageFitShort( LPBJF_POS_IMGINFO, LPBJF_POS_PRNINFO, LPBJF_POSINFO, LPBJF_MARGIN_INFO );
 extern short ImageFitLong( LPBJF_POS_IMGINFO, LPBJF_POS_PRNINFO, LPBJF_POSINFO, LPBJF_MARGIN_INFO );
@@ -121,6 +123,7 @@ extern short ImageCenter( LPBJF_POS_IMGINFO, LPBJF_POS_PRNINFO, LPBJF_POSINFO, L
 extern short ImageCut( LPBJF_POS_IMGINFO, LPBJF_POS_PRNINFO, LPBJF_POSINFO, LPBJF_MARGIN_INFO );
 extern short MarginInit(LPBJF_POS_PRNINFO, LPBJF_POSINFO, LPBJF_MARGIN_INFO);
 extern short SetExtMargin(LPBJF_POS_PRNINFO, LPBJF_POSINFO, LPBJF_MARGIN_INFO, LPBJFLTOVERMARGININFO);
+extern short SetExtLevel( LPBJF_MARGIN_INFO, short);
 extern short SetBbox(LPBJF_OPTINFO , LPBJF_POS_IMGINFO , LPBJF_POSINFO , LPBJF_MARGIN_INFO , int , int);
 short bjf_pos_set_paperwidth( LPBJF_MARGIN_INFO , long );
 short bjf_pos_set_paperlength( LPBJF_MARGIN_INFO , long );
